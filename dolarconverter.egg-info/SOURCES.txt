@@ -1,9 +1,0 @@
-LICENSE
-README.md
-setup.py
-dolarconverter/__init__.py
-dolarconverter/usconverter.py
-dolarconverter.egg-info/PKG-INFO
-dolarconverter.egg-info/SOURCES.txt
-dolarconverter.egg-info/dependency_links.txt
-dolarconverter.egg-info/top_level.txt
