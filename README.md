@@ -1,5 +1,6 @@
 # Dolarconverter
-app simple escrita en python que convierte pesos ARS y UYU en dolares con la cotización Real consumida por  API
+- App simple escrita en python que convierte pesos ARS y UYU en dolares con la cotización Real consumida por  API.
+- Los valores aceptados son dos parametros separados por espacio en primer lugar la cantidad de dinero a convertir y en segundo la moneda , que puede ser ARS o UYU.
 
 ## Diagrama de Secuencia
 ### Caso python interpreter
