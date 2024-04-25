@@ -1,5 +1,11 @@
 FROM python:3.11
 
+Env SDE="true"
+
+ENV AMOUNT=""
+
+ENV CURRENCY=""
+
 WORKDIR /app
 
 COPY requirements.txt ./
@@ -8,8 +14,5 @@ RUN pip install -r requirements.txt
 
 COPY . ./
 
-ENTRYPOINT ["python", "-u", "src/usconverter.py", "$AMOUNT", "$CURRENCY"]
+ENTRYPOINT ["python", "-u", "dolarconverter/usconverter.py", "$AMOUNT", "$CURRENCY"]
 
-# Define arguments as environment variables
-ENV AMOUNT=""
-ENV CURRENCY=""
