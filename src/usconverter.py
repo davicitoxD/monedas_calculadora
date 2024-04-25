@@ -2,6 +2,7 @@ import sys
 import requests
 
 def obtener_cotizacion():
+    # Intentamos obtener algun resultado de la api , en el caso contrario devolvemos error
     try:
         # Obtener la cotización del USD desde alguna página web
         response = requests.get("https://api.exchangerate-api.com/v4/latest/USD")

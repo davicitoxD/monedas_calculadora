@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="calculadora",
+    name="usconverter",
     version="0.1.0",
     description="USD Converter",
     author="David Runke",
