@@ -13,6 +13,7 @@
 ![image](https://github.com/davicitoxD/monedas_calculadora/assets/8561970/da5275f3-fcf6-4163-89e0-1ae5fe91adfd)
 ### Caso docker
 ```
+- $ docker build  --no-cache -f dockerfile -t usconverter-sde . 
 - $ docker run -e AMOUNT=1000 -e CURRENCY=UYU usconverter-sde
 
 ```
