@@ -4,6 +4,8 @@ app simple escrita en python que convierte pesos ARS y UYU en dolares con la cot
 ## Diagrama de Secuencia
 ### Caso python interpreter
 ```
+- $ virtaulenv env
+- $ . env/bin/activate 
 - $ python dolarconverter/usconverter.py 5000 ARS 
 
 ```
