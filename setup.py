@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="usconverter",
@@ -6,6 +6,6 @@ setup(
     description="USD Converter",
     author="David Runke",
     author_email="davidrunke@gmail.com",
-    packages=["src"],
+    packages=find_packages(),
     install_requires=[],
 )

@@ -1,3 +1,5 @@
 import sys
-from usconverter import convertir_a_usd
+from usconverter.usconverter import convertir_a_usd
+
+convertir_a_usd()
 

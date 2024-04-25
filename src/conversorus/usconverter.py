@@ -1,4 +1,5 @@
 import sys
+import os
 import requests
 
 def obtener_cotizacion():
@@ -45,9 +46,15 @@ def main():
         print("Uso: python calculadora.py <monto> <moneda> , Monedas aceptadas <ARS> <UYU> ")
         print("<ARS> corresponde a pesos Argentinos y <UYU> coreesponde a pesos Uruguayos")
         sys.exit(1)
-    
-    monto = float(sys.argv[1])
-    moneda = sys.argv[2]
+        
+    if len(sys.argv) > 1:
+        # Si tengo datos por teclado 
+        monto = float(sys.argv[1])
+        moneda = sys.argv[2]
+    else:
+        # Si no tengo datos por teclado los tomo por ambiente
+        monto = float(os.environ["AMOUNT"])
+        moneda = os.environ["CURRENCY"]
 
     cotizacion_usd = obtener_cotizacion()
     convertir_a_usd(monto, moneda, cotizacion_usd)
