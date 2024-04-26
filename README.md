@@ -6,7 +6,8 @@
 ### Caso python interpreter
 ```
 - $ virtaulenv env
-- $ . env/bin/activate 
+- $ . env/bin/activate
+- $ pip install -r requirements.txt 
 - $ python dolarconverter/usconverter.py 5000 ARS 
 
 ```
